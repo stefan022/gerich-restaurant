@@ -6,7 +6,7 @@ import './Chef.css'
 import { images } from '../../constants'
 import { SubHeading } from '../../Components'
 
-const Chef = () => {
+const Chef: React.FC = (): JSX.Element => {
   return (
     <div className='app__bg app__wrapper section__padding'>
       <div className='app__wrapper_img app__wrapper_img-reverse'>

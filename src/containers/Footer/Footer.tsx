@@ -9,7 +9,7 @@ import { FiInstagram, FiTwitter, FiFacebook } from 'react-icons/fi'
 import { FooterOverlay, Newsletter } from '../../Components'
 import { images } from '../../constants'
 
-const Footer = () => {
+const Footer: React.FC = (): JSX.Element => {
   return (
     <div className="app__footer section__padding" id='login'>
       <FooterOverlay/>

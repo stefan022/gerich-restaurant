@@ -8,7 +8,7 @@ import { Navbar } from './Components';
 
 import './App.css';
 
-const App = () => (
+const App: React.FC = (): JSX.Element => (
   <div>
     <Navbar />
     <Header />

@@ -10,7 +10,7 @@ import { MdOutlineRestaurantMenu } from 'react-icons/md'
 // img
 import images from '../../constants/images'
 
-const Navbar = () => {
+const Navbar: React.FC = (): JSX.Element => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -40,7 +40,7 @@ const Navbar = () => {
           toggleMenu && (
               <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
                 <MdOutlineRestaurantMenu size={27} className="overlay__close" onClick={() => setToggleMenu(false)}/>
-                <ul className='app__navbar-smallscreen_links'>
+                <ul className='app__navbar-smallscreen_links' onClick={() => setToggleMenu(false)}>
                   <li className='p__opensans'><a href="#home">Home</a></li>
                   <li className='p__opensans'><a href="#about">About</a></li>
                   <li className='p__opensans'><a href="#menu">Menu</a></li>

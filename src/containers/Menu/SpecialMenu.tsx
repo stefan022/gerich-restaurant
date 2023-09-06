@@ -6,7 +6,7 @@ import './SpecialMenu.css'
 import { SubHeading, MenuItem } from '../../Components'
 import { images, data } from '../../constants'
 
-const SpecialMenu = () => {
+const SpecialMenu: React.FC = (): JSX.Element => {
   return (
     <div className='app__specialMenu flex__center section__padding' id='menu'>
       <div className="app__specialMenu-title">

@@ -8,7 +8,7 @@ import { images, data } from '../../constants'
 
 import AwardCard from './AwardCard'
 
-const Laurels = () => {
+const Laurels: React.FC = (): JSX.Element => {
   return (
     <div className="app__bg app__wrapper section__padding" id='awards'>
       <div className="app__wrapper_info">

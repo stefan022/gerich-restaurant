@@ -3,7 +3,7 @@ import React from 'react'
 import { SubHeading } from '../../Components'
 import { images } from '../../constants'
 
-const FindUs = () => {
+const FindUs: React.FC = (): JSX.Element => {
   return (
     <div className="app__bg app__wrapper section__padding" id="contact">
 

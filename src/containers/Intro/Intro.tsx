@@ -7,20 +7,19 @@ import './Intro.css'
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs'
 
 import { meal } from '../../constants'
-import { MdVideoCameraFront } from 'react-icons/md'
 
-const Intro = () => {
-  const [playVideo, setPlayVideo] = useState(false);
+const Intro: React.FC = (): JSX.Element => {
+  const [playVideo, setPlayVideo] = useState<boolean>(false);
 
-  const vidRef = useRef();
+  const vidRef = useRef<HTMLVideoElement>(null);
 
   const handleVideo = () => {
     setPlayVideo((prevPlayVideo) => !prevPlayVideo); // off-on
 
     if (playVideo) {
-      vidRef.current.pause();
+      vidRef.current!.pause();
     } else {
-      vidRef.current.play();
+      vidRef.current!.play();
     }
   };
 

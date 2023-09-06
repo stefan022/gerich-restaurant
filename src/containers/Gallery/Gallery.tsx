@@ -16,7 +16,7 @@ const galleryImages = [
   images.gallery04
 ]
 
-const Gallery = () => {
+const Gallery: React.FC = (): JSX.Element => {
   const scrollRef = useRef();
 
   const scroll = (direction) => {

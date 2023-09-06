@@ -53,7 +53,7 @@
 }
 
 .custom__button {
-  background-color: var(--color-crimson);
+    background-color: var(--color-crimson);
     color: var(--color-black);
     font-family: var(--font-base);
     font-weight: 700;
@@ -65,6 +65,40 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transition: .3s;
+    position: relative;
+}
+
+.custom__button:hover {
+  background-color: var(--color-dark);
+  color: var(--color-crimson);
+  transition: .3s;
+}
+
+.custom__button::before,
+.custom__button::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background: var(--color-crimson);
+  transition: 1s;
+}
+
+.custom__button::before  {
+  bottom: 0;
+  left: 0;
+}
+
+.custom__button::after {
+  top: 0;
+  right: 0;
+}
+
+.custom__button:hover::before,
+.custom__button:hover::after {
+  width: 100%;
+  transition: 1s;
 }
 
 .p__cormorant {

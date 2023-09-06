@@ -3,7 +3,13 @@ import React from 'react'
 // style
 import './MenuItem.css'
 
-const MenuItem = ({ title, price, tags }) => {
+interface IProps {
+  title: string;
+  price: string;
+  tags: string;
+}
+
+const MenuItem: React.FC<IProps> = ({ title, price, tags }): JSX.Element => {
   return (
     <div className='app__menuItem'>
 

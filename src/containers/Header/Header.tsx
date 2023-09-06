@@ -9,7 +9,7 @@ import { images } from '../../constants'
 // components
 import { SubHeading } from '../../Components';
 
-const Header = () => (
+const Header: React.FC = (): JSX.Element => (
   <div className='app__header app__wrapper section__padding' id='home'>
 
     <div className="app__wrapper_info">
